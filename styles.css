@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url("Norse-Bold.otf");
+}
+
+img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.form {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
