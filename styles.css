@@ -2,6 +2,7 @@ body {
   display: flex;
   height: 100vh;
   margin: 0;
+  overflow: hidden;
 }
 
 @font-face {
@@ -9,9 +10,32 @@ body {
   src: url("Norse-Bold.otf");
 }
 
-img {
-  width: 40%;
-  object-fit: cover;
+/* .picture-section {
+  width: 40vw;
+  height: 100vh;
+} */
+
+.plant {
+  width: 40vw;
+  height: 100%;
+}
+
+.odin-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Norse-Bold;
+  font-size: 350%;
+  color: white;
+  background-color: #00000080;
+  padding: 10px 0;
+  top: 20%;
+  width: 40vw;
+}
+
+.logo {
+  width: 15%;
 }
 
 .form-section {
@@ -31,13 +55,14 @@ form,
 
 form {
   background-color: cyan;
+  padding: 5% 10%;
 }
 
-.inputs {
-  display: flex;
-  flex-wrap: wrap;
+/* .inputs {
+  display: grid;
+  grid-auto-columns: min;
   gap: 20px;
-}
+} */
 
 label {
   display: block;
