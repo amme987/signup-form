@@ -12,3 +12,5 @@ function mismatch() {
     password.forEach(item => (item.style.outline = "none"));
   }
 }
+
+//TODO: Space form elements, Show password mismatch error
