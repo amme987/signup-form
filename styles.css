@@ -40,7 +40,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   background-color: #f9fafb;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 .paragraph,
@@ -55,10 +55,6 @@ body {
   padding: 0 10%;
 }
 
-/* .form-section {
-  padding: 0 10%;
-} */
-
 .white-background {
   background-color: white;
   box-shadow: 2px 6px 15px -10px black;
@@ -68,7 +64,7 @@ body {
   padding: 5% 10%;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 15%;
+  gap: 20px 15%;
 }
 
 label {
@@ -98,7 +94,6 @@ button {
 }
 
 button {
-  /* appearance: none; */
   font-weight: bold;
   color: white;
   background-color: #596d48;
