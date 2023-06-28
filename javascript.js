@@ -8,6 +8,7 @@ button.addEventListener("click", mismatch);
 function mismatch() {
   error.forEach(item => console.log(item.value));
   if (error[0].value !== error[1].value) {
+    // Outline in red and notify user if passwords don't match
     password.forEach(item => (item.style.outline = "1px solid red"));
     const mismatch = document.createElement("div");
     mismatch.textContent = "*Passwords do not match";
