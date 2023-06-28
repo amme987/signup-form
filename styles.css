@@ -32,6 +32,7 @@ body {
 
 .logo {
   width: 15%;
+  filter: invert(1);
 }
 
 .form-section {
