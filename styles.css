@@ -3,7 +3,6 @@ body {
   margin: 0;
   display: flex;
   height: 100vh;
-  /* overflow: clip; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -55,11 +54,7 @@ img {
   font-weight: bold;
   background-color: #f9fafb;
   justify-content: center;
-  gap: 50px;
-}
-
-p {
-  margin: 0;
+  gap: 5%;
 }
 
 p,
@@ -72,8 +67,6 @@ p,
 .inputs,
 .account {
   padding: 0 10%;
-  /* padding-left: 10%;
-  padding-right: 10%; */
 }
 
 .text {
@@ -82,13 +75,11 @@ p,
 
 form {
   padding: 30px 0;
-  /* margin-top: -50px; */
   background-color: white;
   box-shadow: 2px 6px 15px -10px black;
 }
 
 .inputs {
-  /* padding: 5% 10%; */
   display: flex;
   flex-wrap: wrap;
   gap: 20px 15%;
@@ -128,10 +119,27 @@ button {
   border-radius: 5px;
   padding: 15px 50px;
   box-shadow: 2px 2px 5px -2px black;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 
 a {
   color: #596d48;
   text-decoration: none;
+}
+
+/* Remove image and have logo stretch across screen on mobile */
+@media only screen and (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+
+  .plant,
+  .credit {
+    display: none;
+  }
+
+  .odin-text {
+    position: static;
+    width: 100%;
+  }
 }
